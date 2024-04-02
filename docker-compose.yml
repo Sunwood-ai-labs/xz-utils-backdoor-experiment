@@ -1,0 +1,7 @@
+version: '3'
+services:
+  kali:
+    build: .
+    tty: true
+    volumes:
+      - ./detect.sh:/detect.sh
