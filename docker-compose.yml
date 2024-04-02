@@ -5,3 +5,4 @@ services:
     tty: true
     volumes:
       - ./detect.sh:/detect.sh
+    privileged: true

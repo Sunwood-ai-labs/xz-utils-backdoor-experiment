@@ -10,8 +10,9 @@ RUN echo 'root:toor' | chpasswd
 RUN service ssh start
 
 RUN apt-get install -y wget
+RUN apt-get install -y bsdmainutils
 
 COPY detect.sh /detect.sh
 RUN chmod +x /detect.sh
 
-CMD ["/usr/sbin/sshd", "-D"]
+# CMD ["/usr/sbin/sshd", "-D"]
